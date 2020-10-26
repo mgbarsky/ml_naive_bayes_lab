@@ -16,12 +16,12 @@ The dataset can be downloaded from here: [movies_reviews](https://drive.google.c
 You can use the code with stop words from the clustering lab or you can use the `sklearn` module `feature_extraction.text`, 
 where you are interested in the `CountVectorizer` (you would need to remove stop words) or in the `TfidfTransformer`. 
 The latter assigns a score to each word based on its frequencies across all the documents, 
-and thus the words that occur across all the documents get downgraded to zero frequency. You can find a nice explanation and example about tf/idf score [here](https://medium.com/analytics-vidhya/tf-idf-term-frequency-technique-easiest-explanation-for-text-classification-in-nlp-with-code-8ca3912e58c3). Before applying it, you would need to explain it in your own words in a separate markdown cell in your notebook. 
+and thus the words that occur across all the documents (the stop words) are downgraded to zero frequency. You can find a nice explanation and an example about tf/idf score [here](https://medium.com/analytics-vidhya/tf-idf-term-frequency-technique-easiest-explanation-for-text-classification-in-nlp-with-code-8ca3912e58c3). Whatever vectorization technique you chose, you would need to explain it in your own words in a separate markdown cell in your notebook. 
 - Once you have a vector for each review, you can add the labels *pos* or *neg*, depending on the directory (as we did in cat/dog classification lab), and then dividse the dataset into training and testing.
 - Now use the train dataset to build a Naive Bayes model. You can use the `sklearn` module `naive_bayes` from [here](https://scikit-learn.org/stable/modules/classes.html#module-sklearn.naive_bayes) to accomplish this task. Carefully select the correct classifier for the data at hand by reading about different classification options.
 - Test the accuracy on the train and on the test data. Try to reach the accuracy of at least 0.80.
 
-Finally, find 5 new movie reviews on the internet which are rated high or low, and try to classify them into positive/negative using your classifier. Report and discuss the results in a separate markdown cell.
+Finally, find 5 new movie reviews on the internet which include a numeric or star rating, and try to classify them into positive/negative using your classifier. Report and discuss the results in a separate markdown cell.
 
 This lab builds towards your final project. Make sure to explain every step and reference all the data/code sources that you use.
 
