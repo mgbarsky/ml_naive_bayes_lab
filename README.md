@@ -9,7 +9,7 @@ Proceedings of EMNLP, pp. 79--86, 2002.
 Similar datasets can be found on [this site](https://www.cs.cornell.edu/people/pabo/movie-review-data/).
 
 Each review is stored in a separate text file. All the files are grouped into 2 subfolders: *pos* and *neg*.
-The dataset can be downloaded from here: [movies_reviews](https://drive.google.com/file/d/1BzgcXlSRqFj1RoadBupx_OQm322-rHTt/view?usp=sharing).
+The dataset can be downloaded from here: [movies_reviews](https://drive.google.com/file/d/1c_ww3UFQ26IBAoFrw3WcH4sUpFM1OO1O/view?usp=sharing).
 
 - First of all, create a new Jupyther notebook, and implement a module that reads files and stores their content in 2 string arrays.
 - Next, you would need to convert the words in each document into a vector of word occurrences. 
